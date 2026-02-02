@@ -13,12 +13,21 @@
 </head>
 <body>
     <!-- HEADER -->
-  <header class="header" id="header">
-       <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img class="logo-logintel" src="assets/images/logo-logintel.jpg" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
-                </a>
+  <!-- HEADER / NAVBAR -->
+    <header class="header" id="header">
+        <div class="container-header">
+            <div class="logos-container">
+                <div class="logo logo-primary">
+                    <a href="index.html">
+                        <img class="logo-logintel" src="assets/images/logintel-logo.png" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
+                    </a>
+                </div>
+                <div class="logo-divider"></div>
+                <div class="logo logo-secondary">
+                    <a href="index.html">
+                        <img class="logo-eset" src="assets/images/eset-logo.png" alt="ESET - Soluciones de Ciberseguridad" />
+                    </a>
+                </div>
             </div>
             <div class="nav-wrapper">
                 <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -26,7 +35,8 @@
                     <span></span>
                     <span></span>
                 </button>
-               <nav class="nav-menu" id="navMenu">
+
+                <nav class="nav-menu" id="navMenu">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Inicio</a></li>
                         <li><a href="hogar.html" class="nav-link">Hogar</a></li>
@@ -56,6 +66,7 @@
                         <li><a href="blog.html" class="nav-link active">Blog</a></li>
                         <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                     </ul>
+
                     <a href="contacto.html" class="btn-cta">Solicitar Demo</a>
                 </nav>
             </div>
@@ -63,7 +74,9 @@
     </header>
 
     <!-- BREADCRUMB -->
-    <div class="container" style="padding-top: var(--spacing-8);">
+    <div style="padding: var(--spacing-8);
+    color: #151e2d;
+    background: aliceblue;">
         <div class="breadcrumb">
             <a href="index.html">Inicio</a>
             <span>/</span>
@@ -72,17 +85,17 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="min-height: 400px; background-image: url('assets/images/blog-cybersecurity.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <section class="hero" id="hero" style="background-image: url(assets/images/blog-cybersecurity.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="container" style="text-align: center; color: white; z-index: 10; position: relative;">
-            <h1 style="margin-bottom: var(--spacing-6); color: white; text-shadow: 0 4px 12px rgba(0,0,0,0.3);">Blog de Seguridad Digital</h1>
-            <p style="font-size: var(--font-size-xl); color: rgba(255,255,255,0.95); text-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <h1 style="margin-bottom: var(--spacing-6); color: white; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">Blog de Seguridad Digital</h1>
+            <p style="font-size: var(--font-size-xl); color: rgba(255,255,255,0.95); text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);">
                 Noticias, tendencias y consejos sobre ciberseguridad y protección digital
             </p>
         </div>
     </section>
 
     <!-- CONTENIDO -->
-    <section style="padding: var(--spacing-20) 0;">
+    <section style="padding: var(--spacing-20); border-top: 2px solid rgba(15, 58, 125, 0.1); position: relative;">
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 300px; gap: var(--spacing-12); align-items: start;">
                 <!-- ARTICULOS -->
@@ -171,37 +184,37 @@
                 <!-- SIDEBAR -->
                 <aside style="position: sticky; top: 100px;">
                     <!-- BUSQUEDA -->
-                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-lg); margin-bottom: var(--spacing-8); border: 1px solid var(--border-color);">
-                        <h3 style="margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Buscar</h3>
-                        <input type="search" placeholder="Buscar artículos..." style="width: 100%; padding: var(--spacing-3); border: 1px solid var(--border-color); border-radius: var(--radius-md); font-size: var(--font-size-sm);">
+                    <div style="background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%); padding: var(--spacing-6); border-radius: var(--radius-lg); margin-bottom: var(--spacing-8); border: 2px solid rgba(212, 220, 233, 0.5); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);">
+                        <h3 style="margin-bottom: var(--spacing-4); font-size: var(--font-size-lg); color: var(--color-dark);">Buscar</h3>
+                        <input type="search" placeholder="Buscar artículos..." style="width: 100%; padding: var(--spacing-3); border: 2px solid rgba(212, 220, 233, 0.5); border-radius: var(--radius-md); font-size: var(--font-size-sm); background: #ffffff; color: var(--color-dark); transition: all 0.3s ease;">
                     </div>
 
                     <!-- CATEGORIAS -->
-                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-lg); margin-bottom: var(--spacing-8); border: 1px solid var(--border-color);">
-                        <h3 style="margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Categorías</h3>
+                    <div style="background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%); padding: var(--spacing-6); border-radius: var(--radius-lg); margin-bottom: var(--spacing-8); border: 2px solid rgba(212, 220, 233, 0.5); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);">
+                        <h3 style="margin-bottom: var(--spacing-4); font-size: var(--font-size-lg); color: var(--color-dark);">Categorías</h3>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm);">Amenazas</a></li>
-                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm);">Protección</a></li>
-                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm);">Tendencias</a></li>
-                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm);">Consejos</a></li>
-                            <li><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm);">Noticias</a></li>
+                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm); font-weight: 500; transition: color 0.3s;">Amenazas</a></li>
+                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm); font-weight: 500; transition: color 0.3s;">Protección</a></li>
+                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm); font-weight: 500; transition: color 0.3s;">Tendencias</a></li>
+                            <li style="margin-bottom: var(--spacing-2);"><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm); font-weight: 500; transition: color 0.3s;">Consejos</a></li>
+                            <li><a href="#" style="color: var(--color-primary); font-size: var(--font-size-sm); font-weight: 500; transition: color 0.3s;">Noticias</a></li>
                         </ul>
                     </div>
 
                     <!-- ARTICULOS POPULARES -->
-                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
-                        <h3 style="margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Populares</h3>
+                    <div style="background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%); padding: var(--spacing-6); border-radius: var(--radius-lg); border: 2px solid rgba(212, 220, 233, 0.5); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);">
+                        <h3 style="margin-bottom: var(--spacing-4); font-size: var(--font-size-lg); color: var(--color-dark);">Populares</h3>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: var(--spacing-4); padding-bottom: var(--spacing-4); border-bottom: 1px solid var(--border-color);">
-                                <a href="#" style="font-size: var(--font-size-sm); font-weight: 600; display: block; margin-bottom: var(--spacing-2);">Ransomware 2024</a>
+                            <li style="margin-bottom: var(--spacing-4); padding-bottom: var(--spacing-4); border-bottom: 2px solid rgba(212, 220, 233, 0.3);">
+                                <a href="#" style="font-size: var(--font-size-sm); font-weight: 600; display: block; margin-bottom: var(--spacing-2); color: var(--color-dark);">Ransomware 2024</a>
                                 <span style="font-size: var(--font-size-xs); color: var(--color-gray);">850 vistas</span>
                             </li>
-                            <li style="margin-bottom: var(--spacing-4); padding-bottom: var(--spacing-4); border-bottom: 1px solid var(--border-color);">
-                                <a href="#" style="font-size: var(--font-size-sm); font-weight: 600; display: block; margin-bottom: var(--spacing-2);">Seguridad Móvil</a>
+                            <li style="margin-bottom: var(--spacing-4); padding-bottom: var(--spacing-4); border-bottom: 2px solid rgba(212, 220, 233, 0.3);">
+                                <a href="#" style="font-size: var(--font-size-sm); font-weight: 600; display: block; margin-bottom: var(--spacing-2); color: var(--color-dark);">Seguridad Móvil</a>
                                 <span style="font-size: var(--font-size-xs); color: var(--color-gray);">720 vistas</span>
                             </li>
                             <li>
-                                <a href="#" style="font-size: var(--font-size-sm); font-weight: 600; display: block; margin-bottom: var(--spacing-2);">Gestión de Contraseñas</a>
+                                <a href="#" style="font-size: var(--font-size-sm); font-weight: 600; display: block; margin-bottom: var(--spacing-2); color: var(--color-dark);">Gestión de Contraseñas</a>
                                 <span style="font-size: var(--font-size-xs); color: var(--color-gray);">650 vistas</span>
                             </li>
                         </ul>

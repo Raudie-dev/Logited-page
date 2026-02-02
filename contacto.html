@@ -12,13 +12,21 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <!-- HEADER -->
+   <!-- HEADER / NAVBAR -->
     <header class="header" id="header">
-       <div class="container d-flex">
-            <div class="logo">
-                <a href="index.html">
-                    <img class="logo-logintel" src="assets/images/logo-logintel.jpg" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
-                </a>
+        <div class="container-header">
+            <div class="logos-container">
+                <div class="logo logo-primary">
+                    <a href="index.html">
+                        <img class="logo-logintel" src="assets/images/logintel-logo.png" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
+                    </a>
+                </div>
+                <div class="logo-divider"></div>
+                <div class="logo logo-secondary">
+                    <a href="index.html">
+                        <img class="logo-eset" src="assets/images/eset-logo.png" alt="ESET - Soluciones de Ciberseguridad" />
+                    </a>
+                </div>
             </div>
             <div class="nav-wrapper">
                 <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -26,7 +34,8 @@
                     <span></span>
                     <span></span>
                 </button>
-               <nav class="nav-menu" id="navMenu">
+
+                <nav class="nav-menu" id="navMenu">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Inicio</a></li>
                         <li><a href="hogar.html" class="nav-link">Hogar</a></li>
@@ -56,6 +65,7 @@
                         <li><a href="blog.html" class="nav-link">Blog</a></li>
                         <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
                     </ul>
+
                     <a href="contacto.html" class="btn-cta">Solicitar Demo</a>
                 </nav>
             </div>
@@ -63,7 +73,9 @@
     </header>
 
     <!-- BREADCRUMB -->
-    <div class="container" style="padding-top: var(--spacing-8);">
+    <div style="padding: var(--spacing-8);
+    color: #151e2d;
+    background: aliceblue;">
         <div class="breadcrumb">
             <a href="index.html">Inicio</a>
             <span>/</span>
@@ -72,7 +84,7 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="min-height: 400px; background-image: url('assets/images/contacts-cibersegurity.jpg');">
+    <section class="hero" id="hero" style="background-image: url(assets/images/contacts-cibersegurity.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="container" style="text-align: center; color: white; z-index: 10;">
             <h1 style="margin-bottom: var(--spacing-6); color: white;">Ponte en Contacto</h1>
             <p style="font-size: var(--font-size-xl); color: rgba(255,255,255,0.9);">
@@ -89,30 +101,30 @@
                 <div>
                     <h2 style="margin-bottom: var(--spacing-8);">Información de Contacto</h2>
                     
-                    <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); margin-bottom: var(--spacing-8); border: 1px solid var(--border-color);">
-                        <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Teléfono</h3>
+                    <div style="background: rgba(12, 18, 38, 0.4); padding: var(--spacing-8); border-radius: var(--radius-xl); margin-bottom: var(--spacing-8); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1);">
+                        <h3 style="color: #00ff88; margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Teléfono</h3>
                         <p style="font-size: var(--font-size-lg); margin: 0;">
-                            <a href="tel:+582129064241" style="color: var(--color-secondary); font-weight: 600;">+58 (212) 906-4241</a>
+                            <a href="tel:+582129064241" style="color: #a0aec0; font-weight: 600;">+58 (212) 906-4241</a>
                         </p>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-dark);">Disponible Lunes a Viernes 9:00 AM - 6:00 PM</p>
+                        <p style="font-size: var(--font-size-sm); color: #a0aec0;">Disponible Lunes a Viernes 9:00 AM - 6:00 PM</p>
                     </div>
 
-                    <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); margin-bottom: var(--spacing-8); border: 1px solid var(--border-color);">
-                        <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Email</h3>
+                    <div style="background: rgba(12, 18, 38, 0.4); padding: var(--spacing-8); border-radius: var(--radius-xl); margin-bottom: var(--spacing-8); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1);">
+                        <h3 style="color: #00ff88; margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Email</h3>
                         <p style="font-size: var(--font-size-lg); margin: 0;">
-                            <a href="mailto:info@logintel.com.ve" style="color: var(--color-secondary); font-weight: 600;">info@logintel.com.ve</a>
+                            <a href="mailto:info@logintel.com.ve" style="color: #a0aec0; font-weight: 600;">info@logintel.com.ve</a>
                         </p>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-dark);">Respuesta garantizada en 24 horas</p>
+                        <p style="font-size: var(--font-size-sm); color: #a0aec0;">Respuesta garantizada en 24 horas</p>
                     </div>
 
-                    <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); margin-bottom: var(--spacing-8); border: 1px solid var(--border-color);">
-                        <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Ubicación</h3>
-                        <p style="margin: 0; font-weight: 500;">Caracas, Venezuela</p>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-dark); margin-top: var(--spacing-2);">Disponemos de oficinas para atención presencial</p>
+                    <div style="background: rgba(12, 18, 38, 0.4); padding: var(--spacing-8); border-radius: var(--radius-xl); margin-bottom: var(--spacing-8); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1);">
+                        <h3 style="color: #00ff88; margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Ubicación</h3>
+                        <p style="margin: 0; font-weight: 500; color: #ffffff;">Caracas, Venezuela</p>
+                        <p style="font-size: var(--font-size-sm); color: #a0aec0; margin-top: var(--spacing-2);">Disponemos de oficinas para atención presencial</p>
                     </div>
 
-                    <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border: 1px solid var(--border-color);">
-                        <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Redes Sociales</h3>
+                    <div style="background: rgba(12, 18, 38, 0.4); padding: var(--spacing-8); border-radius: var(--radius-xl); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1);">
+                        <h3 style="color: #00ff88; margin-bottom: var(--spacing-4); font-size: var(--font-size-lg);">Redes Sociales</h3>
                         <div class="social-links">
                             <a href="#" title="Facebook" style="width: auto; background: none; padding: 0; margin-right: var(--spacing-4);">
                                 <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px; color: var(--color-primary);">
@@ -189,7 +201,7 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <section style="padding: var(--spacing-20) 0; background: var(--bg-secondary);">
+    <section style="padding: var(--spacing-20) 0;">
         <div class="container">
             <div class="section-header">
                 <h2>Preguntas Frecuentes</h2>
@@ -197,51 +209,51 @@
             </div>
 
             <div style="max-width: 800px; margin: 0 auto; margin-top: var(--spacing-12);">
-                <div style="background: white; margin-bottom: var(--spacing-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
-                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.classList.toggle('active')">
+                <div style="background: rgba(12, 18, 38, 0.4); margin-bottom: var(--spacing-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
+                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; color: #ffffff;" onclick="this.parentElement.classList.toggle('active')">
                         <span>¿Cómo obtengo soporte técnico?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s; color: #00ff88;">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
                     <div style="padding: 0 var(--spacing-6) var(--spacing-6); display: none;">
-                        <p style="margin: 0; color: var(--color-gray-dark);">Puedes contactarnos por teléfono al +58 (212) 906-4241, por email a info@logintel.com.ve o a través del formulario en esta página. Nuestro equipo responde en máximo 24 horas.</p>
+                        <p style="margin: 0; color: #a0aec0;">Puedes contactarnos por teléfono al +58 (212) 906-4241, por email a info@logintel.com.ve o a través del formulario en esta página. Nuestro equipo responde en máximo 24 horas.</p>
                     </div>
                 </div>
 
-                <div style="background: white; margin-bottom: var(--spacing-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
-                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.classList.toggle('active')">
+                <div style="background: rgba(12, 18, 38, 0.4); margin-bottom: var(--spacing-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
+                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; color: #ffffff;" onclick="this.parentElement.classList.toggle('active')">
                         <span>¿Puedo probar ESET sin costo?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s; color: #00ff88;">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
                     <div style="padding: 0 var(--spacing-6) var(--spacing-6); display: none;">
-                        <p style="margin: 0; color: var(--color-gray-dark);">Sí, ofrecemos una prueba gratuita de 30 días. No requiere tarjeta de crédito. Solicita tu demo en nuestro formulario de contacto.</p>
+                        <p style="margin: 0; color: #a0aec0;">Sí, ofrecemos una prueba gratuita de 30 días. No requiere tarjeta de crédito. Solicita tu demo en nuestro formulario de contacto.</p>
                     </div>
                 </div>
 
-                <div style="background: white; margin-bottom: var(--spacing-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
-                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.classList.toggle('active')">
+                <div style="background: rgba(12, 18, 38, 0.4); margin-bottom: var(--spacing-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
+                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; color: #ffffff;" onclick="this.parentElement.classList.toggle('active')">
                         <span>¿Qué incluye la licencia?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s; color: #00ff88;">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
                     <div style="padding: 0 var(--spacing-6) var(--spacing-6); display: none;">
-                        <p style="margin: 0; color: var(--color-gray-dark);">Cada licencia incluye: protección completa contra amenazas, actualizaciones automáticas, soporte técnico y acceso a herramientas exclusivas. Para empresas, se incluye consola de administración y reportes avanzados.</p>
+                        <p style="margin: 0; color: #a0aec0;">Cada licencia incluye: protección completa contra amenazas, actualizaciones automáticas, soporte técnico y acceso a herramientas exclusivas. Para empresas, se incluye consola de administración y reportes avanzados.</p>
                     </div>
                 </div>
 
-                <div style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
-                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.classList.toggle('active')">
+                <div style="background: rgba(12, 18, 38, 0.4); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1); border: 2px solid rgba(0, 255, 136, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
+                    <button style="width: 100%; padding: var(--spacing-6); background: none; border: none; text-align: left; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; color: #ffffff;" onclick="this.parentElement.classList.toggle('active')">
                         <span>¿ESET funciona en todos los sistemas?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; transition: transform 0.3s; color: #00ff88;">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
                     <div style="padding: 0 var(--spacing-6) var(--spacing-6); display: none;">
-                        <p style="margin: 0; color: var(--color-gray-dark);">Sí, ESET está disponible para Windows, macOS, Android, Linux y sistemas empresariales. Una sola suscripción puede proteger múltiples dispositivos.</p>
+                        <p style="margin: 0; color: #a0aec0;">Sí, ESET está disponible para Windows, macOS, Android, Linux y sistemas empresariales. Una sola suscripción puede proteger múltiples dispositivos.</p>
                     </div>
                 </div>
             </div>

@@ -12,13 +12,22 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <!-- HEADER -->
-  <header class="header" id="header">
-       <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img class="logo-logintel" src="assets/images/logo-logintel.jpg" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
-                </a>
+ 
+  <!-- HEADER / NAVBAR -->
+    <header class="header" id="header">
+        <div class="container-header">
+            <div class="logos-container">
+                <div class="logo logo-primary">
+                    <a href="index.html">
+                        <img class="logo-logintel" src="assets/images/logintel-logo.png" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
+                    </a>
+                </div>
+                <div class="logo-divider"></div>
+                <div class="logo logo-secondary">
+                    <a href="index.html">
+                        <img class="logo-eset" src="assets/images/eset-logo.png" alt="ESET - Soluciones de Ciberseguridad" />
+                    </a>
+                </div>
             </div>
             <div class="nav-wrapper">
                 <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -26,7 +35,8 @@
                     <span></span>
                     <span></span>
                 </button>
-               <nav class="nav-menu" id="navMenu">
+
+                <nav class="nav-menu" id="navMenu">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Inicio</a></li>
                         <li><a href="hogar.html" class="nav-link">Hogar</a></li>
@@ -56,15 +66,17 @@
                         <li><a href="blog.html" class="nav-link">Blog</a></li>
                         <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                     </ul>
+
                     <a href="contacto.html" class="btn-cta">Solicitar Demo</a>
                 </nav>
             </div>
         </div>
     </header>
 
-
     <!-- BREADCRUMB -->
-    <div class="container" style="padding-top: var(--spacing-8);">
+    <div style="padding: var(--spacing-8);
+    color: #151e2d;
+    background: aliceblue;">
         <div class="breadcrumb">
             <a href="index.html">Inicio</a>
             <span>/</span>
@@ -73,7 +85,7 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="min-height: 500px; background-image: url('assets/images/eset-business.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <section class="hero" id="hero" style="background-image: url(assets/images/eset-business.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="container" style="text-align: center; color: white; z-index: 10; position: relative;">
             <h1 style="margin-bottom: var(--spacing-6); color: white; text-shadow: 0 4px 12px rgba(0,0,0,0.3);">Seguridad Empresarial ESET</h1>
             <p style="font-size: var(--font-size-xl); color: rgba(255,255,255,0.95); margin-bottom: var(--spacing-8); text-shadow: 0 2px 8px rgba(0,0,0,0.2); max-width: 700px; margin-left: auto; margin-right: auto;">
@@ -203,7 +215,7 @@
     </section>
 
     <!-- VENTAJAS -->
-    <section style="padding: var(--spacing-20) 0; background: var(--bg-secondary);">
+    <section style="padding: var(--spacing-20) 0; border-top: 2px solid rgba(0, 255, 136, 0.2);">
         <div class="container">
             <div class="section-header">
                 <h2>¿Por qué Elegir ESET?</h2>
@@ -211,34 +223,34 @@
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-8); margin-top: var(--spacing-12);">
-                <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary);">
-                    <h3 style="margin-bottom: var(--spacing-3);">Detección Avanzada</h3>
-                    <p style="margin: 0;">Tecnología de inteligencia artificial para detectar amenazas nuevas y desconocidas</p>
+                <div style="background: linear-gradient(135deg, rgba(20, 30, 55, 0.65) 0%, rgba(28, 20, 60, 0.65) 100%); padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary); border: 2px solid rgba(0, 255, 136, 0.25); backdrop-filter: blur(12px);">
+                    <h3 style="margin-bottom: var(--spacing-3); color: #ffffff;">Detección Avanzada</h3>
+                    <p style="margin: 0; color: #b0b8c1;">Tecnología de inteligencia artificial para detectar amenazas nuevas y desconocidas</p>
                 </div>
 
-                <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary);">
-                    <h3 style="margin-bottom: var(--spacing-3);">Bajo Impacto</h3>
-                    <p style="margin: 0;">Protección sin afectar el rendimiento de tu infraestructura</p>
+                <div style="background: linear-gradient(135deg, rgba(20, 30, 55, 0.65) 0%, rgba(28, 20, 60, 0.65) 100%); padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary); border: 2px solid rgba(0, 255, 136, 0.25); backdrop-filter: blur(12px);">
+                    <h3 style="margin-bottom: var(--spacing-3); color: #ffffff;">Bajo Impacto</h3>
+                    <p style="margin: 0; color: #b0b8c1;">Protección sin afectar el rendimiento de tu infraestructura</p>
                 </div>
 
-                <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary);">
-                    <h3 style="margin-bottom: var(--spacing-3);">Cumplimiento</h3>
-                    <p style="margin: 0;">Ayuda con GDPR, HIPAA, PCI-DSS y otras regulaciones</p>
+                <div style="background: linear-gradient(135deg, rgba(20, 30, 55, 0.65) 0%, rgba(28, 20, 60, 0.65) 100%); padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary); border: 2px solid rgba(0, 255, 136, 0.25); backdrop-filter: blur(12px);">
+                    <h3 style="margin-bottom: var(--spacing-3); color: #ffffff;">Cumplimiento</h3>
+                    <p style="margin: 0; color: #b0b8c1;">Ayuda con GDPR, HIPAA, PCI-DSS y otras regulaciones</p>
                 </div>
 
-                <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary);">
-                    <h3 style="margin-bottom: var(--spacing-3);">Escalabilidad</h3>
-                    <p style="margin: 0;">Crece con tu negocio sin necesidad de cambiar plataforma</p>
+                <div style="background: linear-gradient(135deg, rgba(20, 30, 55, 0.65) 0%, rgba(28, 20, 60, 0.65) 100%); padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary); border: 2px solid rgba(0, 255, 136, 0.25); backdrop-filter: blur(12px);">
+                    <h3 style="margin-bottom: var(--spacing-3); color: #ffffff;">Escalabilidad</h3>
+                    <p style="margin: 0; color: #b0b8c1;">Crece con tu negocio sin necesidad de cambiar plataforma</p>
                 </div>
 
-                <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary);">
-                    <h3 style="margin-bottom: var(--spacing-3);">ROI Comprobado</h3>
-                    <p style="margin: 0;">Reduce costos de incidentes y mejora productividad</p>
+                <div style="background: linear-gradient(135deg, rgba(20, 30, 55, 0.65) 0%, rgba(28, 20, 60, 0.65) 100%); padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary); border: 2px solid rgba(0, 255, 136, 0.25); backdrop-filter: blur(12px);">
+                    <h3 style="margin-bottom: var(--spacing-3); color: #ffffff;">ROI Comprobado</h3>
+                    <p style="margin: 0; color: #b0b8c1;">Reduce costos de incidentes y mejora productividad</p>
                 </div>
 
-                <div style="background: white; padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary);">
-                    <h3 style="margin-bottom: var(--spacing-3);">Actualizaciones</h3>
-                    <p style="margin: 0;">Protección contra amenazas emergentes en tiempo real</p>
+                <div style="background: linear-gradient(135deg, rgba(20, 30, 55, 0.65) 0%, rgba(28, 20, 60, 0.65) 100%); padding: var(--spacing-8); border-radius: var(--radius-xl); border-left: 4px solid var(--color-primary); border: 2px solid rgba(0, 255, 136, 0.25); backdrop-filter: blur(12px);">
+                    <h3 style="margin-bottom: var(--spacing-3); color: #ffffff;">Actualizaciones</h3>
+                    <p style="margin: 0; color: #b0b8c1;">Protección contra amenazas emergentes en tiempo real</p>
                 </div>
             </div>
         </div>

@@ -21,7 +21,6 @@ img {
 
 /* ===== SECCIÓN DE ESTADÍSTICAS MEJORADA ===== */
 .stat-item {
-    background: linear-gradient(135deg, rgb(234 234 234 / 95%) 0%, rgba(245, 247, 250, 0.95) 100%);
     border: 1px solid rgba(0,166,81,0.1);
     position: relative;
     overflow: hidden;
@@ -40,7 +39,6 @@ img {
 
 /* ===== SOLUCIONES CON IMÁGENES ===== */
 .solution-card {
-    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
     backdrop-filter: blur(10px);
 }
 
@@ -258,17 +256,6 @@ img {
     backdrop-filter: blur(20px);
     position: relative;
     z-index: var(--z-sticky); /* Asegura que header esté sobre hero */
-}
-
-/* ===== SECTION SPACING ===== */
-.solutions-section,
-.tools-section,
-.stats-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
-}
-
-.tools-section {
-    background: linear-gradient(180deg, #f3f4f6 0%, #e5e7eb 50%, #ffffff 100%);
 }
 
 /* ===== BORDER ACCENTS ===== */

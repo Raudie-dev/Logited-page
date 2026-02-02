@@ -26,12 +26,12 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        background: rgba(12, 18, 38, 0.9);
         padding: var(--spacing-6);
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid rgba(0, 255, 136, 0.3);
         display: none;
         z-index: var(--z-dropdown);
-        box-shadow: var(--shadow-lg);
+        box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.1);
     }
 
     .nav-menu.active .nav-list {
@@ -549,7 +549,8 @@
     }
 
     body {
-        background: white;
+        background: linear-gradient(135deg, rgba(12, 18, 38, 0.95) 0%, rgba(8, 12, 30, 0.95) 100%);
+        background-attachment: fixed;
     }
 
     .container {

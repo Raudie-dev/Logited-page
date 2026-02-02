@@ -15,10 +15,18 @@
     <!-- HEADER / NAVBAR -->
     <header class="header" id="header">
         <div class="container-header">
-            <div class="logo">
-                <a href="index.html">
-                    <img class="logo-logintel" src="assets/images/logo-logintel.jpg" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
-                </a>
+            <div class="logos-container">
+                <div class="logo logo-primary">
+                    <a href="index.html">
+                        <img class="logo-logintel" src="assets/images/logintel-logo.png" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
+                    </a>
+                </div>
+                <div class="logo-divider"></div>
+                <div class="logo logo-secondary">
+                    <a href="index.html">
+                        <img class="logo-eset" src="assets/images/eset-logo.png" alt="ESET - Soluciones de Ciberseguridad" />
+                    </a>
+                </div>
             </div>
             <div class="nav-wrapper">
                 <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -60,19 +68,21 @@
 
                     <a href="contacto.html" class="btn-cta">Solicitar Demo</a>
                 </nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img class="logo-logintel" src="assets/images/eset-logo.png" alt="Logintel - Distribuidor Oficial ESET Venezuela" />
-                    </a>
-                </div>
             </div>
         </div>
     </header>
 
-    <section class="hero" id="hero" style="background-image: url('assets/images/ciberseguridad-1280x593.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
-        
+    <section class="hero" id="hero" style="background-image: url(assets/images/ciberseguridad-1280x593.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="hero-slider">
             <div class="slider-item active">
+                <div class="slider-content">
+                    <span class="slider-badge">Distribuidor Oficial</span>
+                    <h1>Somos Distribuidores de ESET</h1>
+                    <p>Protección contra ransomware y amenazas cibernéticas con tecnología de detección en tiempo real que bloquea amenazas antes de que causen daño</p>
+                    <a href="#" class="btn-primary">Conocer Más</a>
+                </div>
+            </div>
+            <div class="slider-item">
                 <div class="slider-content">
                     <h1>Protección contra Ransomware</h1>
                     <p>Mantén tus dispositivos seguros con tecnología de detección en tiempo real que bloquea amenazas antes de que causen daño</p>
@@ -96,9 +106,10 @@
         </div>
 
         <div class="slider-controls">
-            <button class="slider-dot active" data-index="0"></button>
+            <button class="slider-dot active" data-index="0"></button> 
             <button class="slider-dot" data-index="1"></button>
             <button class="slider-dot" data-index="2"></button>
+            <button class="slider-dot" data-index="3"></button>
         </div>
     </section>
 
@@ -175,7 +186,7 @@
     </section>
 
     <!-- FREE TOOLS SECTION -->
-    <section class="tools-section" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);">
+    <section class="tools-section" id="tools">
         <div class="container">
             <div class="section-header">
                 <h2>Herramientas Gratuitas de Seguridad</h2>
@@ -309,10 +320,10 @@
     </footer>
 
     <!-- SCRIPTS -->
+    <script src="navigation.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/solutions.js"></script>
-    <script src="assets/js/navigation.js"></script>
 </body>
 </html>
